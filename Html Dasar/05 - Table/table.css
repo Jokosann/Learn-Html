@@ -1,0 +1,40 @@
+body {
+    height: 1500px;
+}
+
+.table-3 {
+    width: 100%;
+    height: 250px;
+    position: relative;
+}
+.table-3 .after-3 {
+    position: absolute;
+    top: 30px;
+    right: 400px;
+}
+.table-3 .before-3 {
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+.table-4 {
+    width: 100%;
+    height: 250px;
+    margin-top: 10px;
+    position: relative;
+}
+.table-4 .after-4 {
+    position: absolute;
+    top: 30px;
+    right: 360px;
+}
+.table-4 .before-4 {
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+th {
+    background-color: red;
+}

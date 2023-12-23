@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Table</title>
+	</head>
+	<body>
+		<div class="table">
+			<h2>latihan table</h2>
+
+			<!-- table dasar <tr> <td> -->
+			<div class="table-1">
+				<h3>table 1 :</h3>
+				<table border="1" cellpadding="5" cellspacing="0">
+					<tr>
+						<td>kolom 1 baris 1</td>
+						<td>kolom 1 baris 2</td>
+						<td>kolom 1 baris 3</td>
+						<td>kolom 1 baris 4</td>
+					</tr>
+					<tr>
+						<td>kolom 2 baris 1</td>
+						<td>kolom 2 baris 2</td>
+						<td>kolom 2 baris 3</td>
+						<td>kolom 2 baris 4</td>
+					</tr>
+					<tr>
+						<td>kolom 3 baris 1</td>
+						<td>kolom 3 baris 2</td>
+						<td>kolom 3 baris 3</td>
+						<td>kolom 3 baris 4</td>
+					</tr>
+					<tr>
+						<td>kolom 4 baris 1</td>
+						<td>kolom 4 baris 2</td>
+						<td>kolom 4 baris 3</td>
+						<td>kolom 4 baris 4</td>
+					</tr>
+				</table>
+			</div>
+
+			<br />
+
+			<!-- table <thead> <tbody> <th> -->
+			<div class="table-2">
+				<h3>table 2 :</h3>
+				<table border="1" cellpadding="5" cellspacing="0">
+					<thead>
+						<tr>
+							<th>NO</th>
+							<th>NAMA</th>
+							<th>TTL</th>
+							<th>ALAMAT</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>1</th>
+							<td>Joko Santoso</td>
+							<td>16-05-2003</td>
+							<td>Sawit Permai</td>
+						</tr>
+					</tbody>
+					<tbody>
+						<tr>
+							<th>2</th>
+							<td>Joko Santoso</td>
+							<td>16-05-2003</td>
+							<td>Sawit Permai</td>
+						</tr>
+					</tbody>
+					<tbody>
+						<tr>
+							<th>3</th>
+							<td>Joko Santoso</td>
+							<td>16-05-2003</td>
+							<td>Sawit Permai</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<br />
+
+			<!-- colspan & rowspan -->
+			<div class="table-3">
+				<h3>table 3 :</h3>
+				<div class="before-3">
+					<h4>before :</h4>
+					<table border="1" cellpadding="5" cellspacing="0">
+						<tr>
+							<td>kolom 1 baris 1</td>
+							<td>kolom 1 baris 2</td>
+							<td>kolom 1 baris 3</td>
+						</tr>
+						<tr>
+							<td>kolom 2 baris 1</td>
+							<td>kolom 2 baris 2</td>
+							<td>kolom 2 baris 3</td>
+						</tr>
+						<tr>
+							<td>kolom 3 baris 1</td>
+							<td>kolom 3 baris 2</td>
+							<td>kolom 3 baris 3</td>
+						</tr>
+						<tr>
+							<td>kolom 4 baris 1</td>
+							<td>kolom 4 baris 2</td>
+							<td>kolom 4 baris 3</td>
+						</tr>
+					</table>
+				</div>
+				<div class="after-3">
+					<h4>after give col & rowspan :</h4>
+					<table border="1" cellpadding="5" cellspacing="0">
+						<tr>
+							<td colspan="3" style="text-align: center">(colspan)kolom 1 baris 1,2,3</td>
+						</tr>
+						<tr>
+							<td rowspan="3">(rowspan)kolom 1,2,3 baris 1</td>
+							<td>kolom 2 baris 2</td>
+							<td>kolom 2 baris 3</td>
+						</tr>
+						<tr>
+							<td>kolom 3 baris 2</td>
+							<td>kolom 3 baris 3</td>
+						</tr>
+						<tr>
+							<td>kolom 4 baris 2</td>
+							<td>kolom 4 baris 3</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<br />
+
+			<div class="table-4">
+				<h3>table 4 :</h3>
+				<div class="before-4">
+					<h4>before :</h4>
+					<table border="1" cellpadding="5" cellspacing="0">
+						<tr>
+							<td>kolom 1 baris 1</td>
+							<td>kolom 1 baris 2</td>
+							<td>kolom 1 baris 3</td>
+							<td>kolom 1 baris 4</td>
+						</tr>
+						<tr>
+							<td>kolom 2 baris 1</td>
+							<td>kolom 2 baris 2</td>
+							<td>kolom 2 baris 3</td>
+							<td>kolom 2 baris 4</td>
+						</tr>
+						<tr>
+							<td>kolom 3 baris 1</td>
+							<td>kolom 3 baris 2</td>
+							<td>kolom 3 baris 3</td>
+							<td>kolom 3 baris 4</td>
+						</tr>
+						<tr>
+							<td>kolom 4 baris 1</td>
+							<td>kolom 4 baris 2</td>
+							<td>kolom 4 baris 3</td>
+							<td>kolom 4 baris 4</td>
+						</tr>
+					</table>
+				</div>
+				<div class="after-4">
+					<h4>after :</h4>
+					<table border="1" cellpadding="5" cellspacing="0">
+						<tr>
+							<td>kolom 1 baris 1</td>
+							<td>kolom 1 baris 2</td>
+							<td>kolom 1 baris 3</td>
+							<td>kolom 1 baris 4</td>
+						</tr>
+						<tr>
+							<td>kolom 2 baris 1</td>
+							<td colspan="2" rowspan="2">
+								(col & rowspan)kolom 2,3 baris 2,3
+								<p><img src="gambar.jpg" width="200px" alt="" /></p>
+							</td>
+							<td>kolom 2 baris 4</td>
+						</tr>
+						<tr>
+							<td>kolom 3 baris 1</td>
+							<td>kolom 3 baris 4</td>
+						</tr>
+						<tr>
+							<td>kolom 4 baris 1</td>
+							<td>kolom 4 baris 2</td>
+							<td>kolom 4 baris 3</td>
+							<td>kolom 4 baris 4</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

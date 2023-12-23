@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			body {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 1.125em;
+				min-height: 100vh;
+				line-height: 1.6;
+				color: #333;
+				padding: 2em;
+			}
+
+			.hero {
+				display: grid;
+				gap: 2em;
+				align-items: center;
+			}
+
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+
+			@media (min-width: 960px) {
+				.hero {
+					grid-template-columns: repeat(2, 1fr);
+				}
+			}
+		</style>
+		<title>images-html5</title>
+	</head>
+	<body>
+		<!-- <h1>image element</h1> -->
+		<!-- atribute img html-5-->
+		<!-- srcset -->
+		<!-- <img
+			src="./img/semut.png"
+			alt="img"
+			srcset="./img/semut.png 500w, ./img/orang.png 750w, ./img/gajah.png 1000w"
+			sizes="(min-width: 1200px) 50vw"
+			loading="lazy"
+		/>
+		<figcaption>test-figcaption</figcaption>
+		<br /> -->
+		<div class="hero">
+			<div class="hero-text">
+				<h1>Hello Joko Santoso</h1>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis molestiae
+					temporibus quasi culpa non inventore accusamus necessitatibus dicta. Id odio aut
+					aliquam odit, molestiae assumenda provident earum obcaecati perferendis laudantium,
+					doloremque et ab? Quisquam aliquid dolores ad? Repudiandae rem totam aliquid
+					reprehenderit, a quae animi nemo ab laborum necessitatibus!
+				</p>
+			</div>
+			<!-- picture -->
+			<picture>
+				<source media="(min-width: 960px)" srcset="./img/gajah.png" sizes="50vw" />
+				<source media="(min-width: 600px)" srcset="./img/orang.png" />
+				<img src="./img/semut.png" alt="semut" />
+			</picture>
+		</div>
+	</body>
+</html>

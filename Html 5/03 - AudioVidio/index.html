@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Audio-Vidio</title>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+			}
+
+			.hero {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				font-size: 3em;
+				color: rgba(255, 255, 255, 0.6);
+				background: linear-gradient(to right, rgba(0, 242, 96, 0.3), rgba(2, 117, 230, 0.3));
+				position: relative;
+				min-height: 100vh;
+				overflow: hidden;
+			}
+
+			.vidio {
+				position: absolute;
+				inset: 0;
+				min-height: 100%;
+				min-height: 100%;
+				z-index: -1;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- ! audio -->
+		<!-- <audio src="./audio/file_example_MP3_700KB.mp3" controls></audio> -->
+		<!-- <figure>
+			<figcaption>Dengarkan "lagu- berikut"</figcaption>
+			<audio controls loop muted>
+				<source src="./audio/\/file_example_OOG_1MG.ogg" type="audio/ogg" />
+				<source src="./audio/file_example_MP3_700KB.mp3" type="audio/mpeg" />
+			</audio>
+		</figure> -->
+
+		<!-- ! vidio -->
+		<!-- <figure>
+			<figcaption>contoh vidio</figcaption>
+			<video controls width="400" poster="../02 - Image elemant/img/1.jpg" loop autoplay muted>
+				<source src="./vidio/video.webm" type="video/webm" />
+			</video>
+		</figure> -->
+
+		<!-- ! membuaat background dengan vidio  -->
+		<div class="hero">
+			<h1>Hello Joko</h1>
+			<video class="vidio" src="./vidio/video.webm" autoplay muted loop width="100%"></video>
+		</div>
+	</body>
+</html>

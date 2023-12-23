@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>formulir</title>
+</head>
+<body>
+	<form>
+		<fieldset>
+<!-- untuk menbuat bingkai form -->
+			<legend>Login</legend>
+<!-- untuk ngasih keterangan di atas -->
+			<p>
+				<label for="nama">Username :</label>
+				<input type="text" id="nama" placeholder="masukkan nama anda...">
+			</p>
+<!-- type=text -->
+			<p>
+				<label for="">Tanggal Lahir :</label>
+				<input type="date">
+			</p>
+<!-- type=date -->
+			<p>Alamat :
+				<select name="" id="">
+					<option value="">jakarta</option>
+					<option value="">bandung</option>
+					<option value="">surabaya</option>
+					<option value="">malang</option>
+					<option value="">pekanbaru</option>
+				</select>				
+			</p>
+<!-- select -->
+			<p>
+				<label>Usia :</label>
+				<input type="number" min="1" max="30">
+			</p>
+<!-- type=number -->
+			<p>
+				<label for="email">Email :</label>
+				<input type="email" id="email" placeholder="masukkan email...">
+			</p>
+<!-- type=email -->
+			<p>
+				<label for="password">Password :</label>
+				<input type="password" id="password">
+			</p>
+<!-- type=password -->
+			<p>Jenis Kelamin :
+				<label for="">pria</label>
+				<input type="radio" name="gender">
+				<label for="">wanita</label>
+				<input type="radio" name="gender">
+			</p>
+<!-- type=radio -->
+			<p>Hobi :
+				<label>menyanyi</label>
+				<input type="checkbox">
+				<label>makan</label>
+				<input type="checkbox">
+				<label>tidur</label>
+				<input type="checkbox">
+			</p>
+<!-- ytpe=checkbox -->
+			<P>
+				<p>Pesan :</p>
+				<textarea name="" id="" cols="30" rows="5"></textarea>	
+			</P>
+<!-- textarea -->
+			<p>
+				<input type="submit" value="kirim!!!">
+			</p>
+<!-- type=submit -->
+		</fieldset>
+	</form>
+	<br><br><br>
+	<form>
+		<fieldset>
+			<legend>Abaout Me</legend>
+			<p>
+				<label for="name">Username :</label>
+				<input type="text" id="name">
+			</p>
+			<p>
+				<label for="url">Alamat Web :</label>
+				<input type="url" id="url" placeholder="https://">
+			</p>
+			<p>
+				<label for="ttl">Tanggal Lahir :</label>
+				<input type="date" id="ttl">
+			</p>
+			<p>
+				<label for="usia">Usia :</label>
+				<input type="number" id="usia" min="1" max="50">
+			</p>
+			<p>
+				<input type="submit" value="send">
+			</p>
+		</fieldset>
+	</form>
+	<br><br><br>
+</body>
+</html>

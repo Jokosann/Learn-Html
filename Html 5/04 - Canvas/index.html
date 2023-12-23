@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+			}
+		</style>
+		<title>Canvas</title>
+	</head>
+	<body>
+		<!-- canvas -->
+		<canvas id="canvas"></canvas>
+
+		<script>
+			// menyiapkan canvas
+			const canvas = document.getElementById("canvas");
+
+			// ukuran canvas
+			canvas.width = window.innerWidth;
+			canvas.height = window.innerHeight;
+
+			// tentukan canvas
+			const c = canvas.getContext("2d");
+
+			// manipulasi canvas
+			// membuat rectangle (kotak)
+			// c.fillStyle = "salmon";
+			// c.strokeStyle = "#999";
+			// c.lineWidth = "5";
+
+			// c.rect(50, 50, 300, 300);
+			// c.fill();
+			// c.stroke();
+
+			// membuat path (segitiga)
+			// c.fillStyle = "#959407";
+			// c.beginPath();
+			// c.moveTo(900, 50);
+			// c.lineTo(1050, 350);
+			// c.lineTo(750, 350);
+			// c.closePath();
+			// c.fill();
+			// c.stroke();
+
+			// membuat arc (lingkaran)
+			// membuat animasi pada canvas
+
+			let x = 300;
+			let y = 200;
+			let spedX = 20;
+			let spedY = 10;
+			function draw() {
+				window.requestAnimationFrame(draw);
+				c.clearRect(0, 0, innerWidth, innerHeight);
+				c.fillStyle = "#674390";
+				c.beginPath();
+				c.arc(x, y, 50, 0, 2 * Math.PI);
+				c.fill();
+				c.stroke();
+
+				if (x + 50 > innerWidth || x - 50 < 0) {
+					spedX = -spedX;
+				}
+				if (y + 50 > innerHeight || y - 50 < 0) {
+					spedY = -spedY;
+				}
+
+				x += spedX;
+				y += spedY;
+			}
+
+			draw();
+		</script>
+	</body>
+</html>
